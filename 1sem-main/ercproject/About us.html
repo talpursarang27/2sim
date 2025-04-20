@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us - CERA'S Tiles</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      body {
+        background: linear-gradient(to right, #e0eafc, #cfdef3);
+        font-family: 'Segoe UI', sans-serif;
+        overflow-x: hidden;
+        animation: fadeInBody 2s ease-in-out;
+      }
+      .hero {
+        background: url('https://images.unsplash.com/photo-1570129477492-45c003edd2be') no-repeat center center/cover;
+        color: white;
+        padding: 100px 20px;
+        text-align: center;
+        animation: slideIn 2s ease-out;
+      }
+      .hero h1 {
+        font-size: 3.5rem;
+        font-weight: bold;
+        animation: fadeInDown 1.5s ease-in-out;
+      }
+      .section {
+        padding: 80px 20px;
+        animation: fadeInSection 1.5s ease-in-out;
+      }
+      .card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        border: none;
+        border-radius: 12px;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+        background: #ffffffdd;
+      }
+      .card:hover {
+        transform: scale(1.03);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+      }
+      .mission-img, .vision-img, .value-img {
+        width: 100%;
+        border-radius: 10px;
+        object-fit: cover;
+        height: 200px;
+      }
+      .card h4 {
+        font-weight: bold;
+        color: #2c3e50;
+      }
+      .card-body p {
+        font-size: 1.1rem;
+        color: #34495e;
+      }
+
+      @keyframes fadeInDown {
+        from { opacity: 0; transform: translateY(-50px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+
+      @keyframes fadeInSection {
+        from { opacity: 0; transform: translateY(30px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+
+      @keyframes slideIn {
+        from { transform: translateX(-100%); opacity: 0; }
+        to { transform: translateX(0); opacity: 1; }
+      }
+
+      @keyframes fadeInBody {
+        from { opacity: 0; }
+        to { opacity: 1; }
+      }
+
+      .fade-in {
+        opacity: 0;
+        animation: fadeIn 2s forwards;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      /* Scroll animation */
+      .animate-on-scroll {
+        opacity: 0;
+        transform: translateY(30px);
+        animation: fadeInSection 1.5s forwards;
+      }
+
+      /* Form Styling */
+      .form-container {
+        background-color: #f8f9fa;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .form-container input,
+      .form-container textarea {
+        border-radius: 8px;
+        border: 1px solid #ced4da;
+        padding: 10px;
+        font-size: 1rem;
+      }
+
+      .form-container button {
+        background-color: #007bff;
+        color: white;
+        border-radius: 8px;
+        border: none;
+        padding: 10px 20px;
+        font-size: 1.1rem;
+        transition: background-color 0.3s ease;
+      }
+
+      .form-container button:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="hero">
+      <h1>Welcome to CERA'S Tiles</h1>
+      <p>Designing spaces, defining style.</p>
+    </header>
+
+    <section class="section container animate-on-scroll">
+      <div class="row text-center mb-5">
+        <div class="col">
+          <h2>About Us</h2>
+          <p class="lead">
+            CERA'S Tiles is more than just a tile company; we are a symbol of craftsmanship, innovation, and a passion for redefining spaces. Established with a vision to blend traditional artistry with modern technology, our journey began with a small but dedicated team focused on creating superior ceramic tiles. Over the years, CERA'S Tiles has grown into a household name, recognized for its quality and aesthetic appeal. Our range of products serves various purposes, from residential to commercial spaces, and we take pride in offering a product that reflects both style and durability.
+          </p>
+          <p class="lead">
+            Our mission has always been simple: to revolutionize the world of tiles by combining advanced technology with artisanal craftsmanship. Whether it’s creating custom designs or producing large-scale tile solutions, we have continued to innovate while staying true to our roots. Today, we offer an extensive range of products, from stunning floor tiles and wall tiles to intricate bathroom and kitchen solutions.
+          </p>
+        </div>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card p-4 h-100">
+            <img src="https://images.unsplash.com/photo-1520584982731-4936ec0edfbf" alt="Mission Image" class="mission-img">
+            <h4>Our Mission</h4>
+            <p>
+              To deliver innovative, sustainable, and superior tile solutions that enhance and elevate the living and working spaces of our customers. Our mission is rooted in craftsmanship and technology, ensuring each product stands the test of time, both in terms of aesthetics and performance. Through continuous innovation, we aim to become a leader in the tile industry, bringing the finest designs to homes and businesses worldwide.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card p-4 h-100">
+            <img src="https://images.unsplash.com/photo-1520875932581-8252cfe85a98" alt="Vision Image" class="vision-img">
+            <h4>Our Vision</h4>
+            <p>
+              Our vision is to be the global leader in tile design and production, known for creating high-quality, sustainable, and aesthetically appealing products. We aspire to push the boundaries of design and technology, establishing CERA'S Tiles as the brand that sets trends in the world of ceramics. We envision a future where our tiles are integral to the design of homes and businesses across the globe, enhancing spaces with beauty, durability, and functionality.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card p-4 h-100">
+            <img src="https://images.unsplash.com/photo-1523303193335-e18c02f50fd6" alt="Values Image" class="value-img">
+            <h4>Our Values</h4>
+            <p>
+              At CERA'S Tiles, we stand firm in our core values: <strong>Innovation, Quality, Sustainability, Integrity,</strong> and <strong>Customer-Centric Service</strong>. We believe in delivering the highest quality products that meet both aesthetic and functional demands. Our innovative approach ensures that we are always at the forefront of design trends, while our commitment to sustainability guarantees that our production methods are environmentally responsible. Above all, we put our customers at the heart of everything we do, ensuring their needs and expectations are always met with excellence.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-5">
+        <div class="col">
+          <h2 class="text-center">Contact Us</h2>
+          <p class="lead text-center">If you have any questions or inquiries, feel free to reach out!</p>
+          <div class="form-container">
+            <form>
+              <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" required>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" required>
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="4" required></textarea>
+              </div>
+              <div class="text-center">
+                <button type="submit" class="btn btn-primary px-5">Send Message</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      window.addEventListener('scroll', function() {
+        const elements = document.querySelectorAll('.animate-on-scroll');
+        elements.forEach(element => {
+          if (element.getBoundingClientRect().top < window.innerHeight) {
+            element.classList.add('fade-in');
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
+
+
+
+
+

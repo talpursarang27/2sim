@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Wall Tiles | Cera's Tiles</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+
+    .page-header {
+      background-color: #122f4b;
+      color: white;
+      padding: 60px 0;
+      text-align: center;
+    }
+
+    .tile-card {
+      border: none;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      background-color: royalblue;
+    }
+
+    .tile-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+    }
+
+    .tile-img {
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .btn-view {
+      border-radius: 50px;
+    }
+  </style>
+</head>
+<body>
+
+  
+  <header class="page-header">
+    <div class="container">
+      <h1 class="display-5 fw-bold"> Bathroom Tiles</h1>
+      <p class="lead">Stylish. Durable. Timeless. Explore our curated collection.</p>
+    </div>
+  </header>
+
+
+  <section class="py-5">
+    <div class="container">
+      <div class="row g-4">
+
+        
+        <div class="col-md-4">
+          <div class="card tile-card">
+            <img src="https://www.thespruce.com/thmb/zzdOz0mCb9FlKrH-_S3O-ePs5n8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/jessicanelsonmarblebathroom-b686575d9112487383b0cf83f1f5c0a3.jpg" class="card-img-top tile-img" alt="Marble wall tile">
+            <div class="card-body">
+              <h5 class="card-title">Classic Marble</h5>
+              <p class="card-text">Elegant marble finish for modern and traditional spaces alike.</p>
+              <a href="#" class="btn btn-dark btn-view">View Details</a>
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="col-md-4">
+          <div class="card tile-card">
+            <img src="https://westerndistributors.com.au/wp-content/uploads/2021/04/GLOSS-400X100.jpg" class="card-img-top tile-img" alt="Subway wall tile">
+            <div class="card-body">
+              <h5 class="card-title">Subway White</h5>
+              <p class="card-text">Bright and clean look for kitchens and bathrooms.</p>
+              <a href="#" class="btn btn-dark btn-view">View Details</a>
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="col-md-4">
+          <div class="card tile-card">
+            <img src="https://images.victorianplumbing.co.uk/products/10-textured-alps-stone-effect-wall-tiles-34-x-50cm/carouselimages/alps-10-wt-musgo_d5.jpg?origin=alps-10-wt-musgo_d5.png&w=675" class="card-img-top tile-img" alt="Textured wall tile">
+            <div class="card-body">
+              <h5 class="card-title">Stone Texture</h5>
+              <p class="card-text">Rustic and natural for an earthy, grounded feel.</p>
+              <a href="#" class="btn btn-dark btn-view">View Details</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  
+  <footer class="bg-dark text-white text-center py-3">
+    <div class="container">
+      <small>&copy; <span id="year"></span> Cera's Tiles. All rights reserved.</small>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Floor Tiles</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    />
+    <style>
+      body {
+        background-color: #e1e7f1;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+      h1 {
+        color: #333;
+      }
+      .card {
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+        border: none;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        border-radius: 15px;
+        background-color: lightgreen;
+      }
+      .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+      }
+      .card-img-top {
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        height: 220px;
+        object-fit: cover;
+      }
+      .tile-title {
+        font-size: 1.25rem;
+        font-weight: 600;
+        color: #2c3e50;
+      }
+      .tile-description {
+        font-size: 0.95rem;
+        color: #6c757d;
+      }
+      #we-1{
+        background-color: cadetblue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container py-5">
+      <h1 class="text-center mb-4" id="we-1">Bathroom Floor Tiles Collection</h1>
+
+      <div class="mb-4 text-center">
+        <label for="finishFilter" class="form-label fw-bold">Filter by Finish:</label>
+        <select id="finishFilter" class="form-select w-50 mx-auto">
+          <option value="all">All</option>
+          <option value="Glossy">Glossy</option>
+          <option value="Matt">Matt</option>
+        </select>
+      </div>
+
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col" data-finish="Glossy">
+          <div class="card h-100">
+            <img src="https://alleanzaquartz.com/wp-content/uploads/2021/02/Monarch_Bianco_Carrara_bathroom_transitional-scaled-e1654714764819.jpg" class="card-img-top" alt="Tile 1">
+            <div class="card-body">
+              <h5 class="tile-title">Bianco Carrara</h5>
+              <p class="tile-description">Glossy white floor tile perfect for modern bathrooms and living rooms.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col" data-finish="Glossy">
+          <div class="card h-100">
+            <img src="https://roper-rhodes.transforms.svdcdn.com/production/products/images/LG_System-500-wall-mounted-unit-gloss-light-grey-lifestyle.jpg?w=500&h=426&q=90&auto=format&fit=crop&crop=focalpoint&fp-x=0.5&fp-y=0.5&dm=1727871139&s=cd210338a37defe4fa5daacf70bf001e" class="card-img-top" alt="Tile 2">
+            <div class="card-body">
+              <h5 class="tile-title">Carbon Gloss</h5>
+              <p class="tile-description">Sleek and dark, ideal for stylish and high-end floor interiors.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col" data-finish="Matt">
+          <div class="card h-100">
+            <img src="https://naturalstonetiles.com.au/wp-content/uploads/2018/08/FOREST-BROWN-MARBLE_RMS-TRADERS_NATURAL-STONE-BATHROOM-KITCHEN-TILES-SUPPLIER-MELBOURNE-2.jpg" class="card-img-top" alt="Tile 3">
+            <div class="card-body">
+              <h5 class="tile-title">Forest Brown</h5>
+              <p class="tile-description">Earthy brown matt finish to bring warmth to your floors.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col" data-finish="Matt">
+          <div class="card h-100">
+            <img src="https://www.keramika.com/images/aparici/catalogue_aparici_sahara.jpg" class="card-img-top" alt="Tile 4">
+            <div class="card-body">
+              <h5 class="tile-title">Sahara Beige</h5>
+              <p class="tile-description">Soft beige shade with a matt texture, perfect for a subtle yet elegant floor.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col" data-finish="Matt">
+          <div class="card h-100">
+            <img src="https://pakistanonyxmarble.com/wp-content/uploads/2024/03/travertine-stone-bathtub-round-shaped-natural-stone-bathtub-design-luxury-custom-freestanding-handcarved-04.webp" class="card-img-top" alt="Tile 5">
+            <div class="card-body">
+              <h5 class="tile-title">Travertino Stone</h5>
+              <p class="tile-description">Natural stone look floor tile, adds rustic charm to any space.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col" data-finish="Glossy">
+          <div class="card h-100">
+            <img src="https://www.nitco.in/nitcomedia/tiles/looks/main/CF017SRT0112.jpg?v=03102023" class="card-img-top" alt="Tile 6">
+            <div class="card-body">
+              <h5 class="tile-title">Rio Beige</h5>
+              <p class="tile-description">A glossy tile with neutral tones, perfect for enhancing smaller rooms.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <script>
+      document.getElementById('finishFilter').addEventListener('change', function () {
+        const value = this.value;
+        const cards = document.querySelectorAll('.col');
+
+        cards.forEach(card => {
+          const finish = card.getAttribute('data-finish');
+          if (value === 'all' || finish === value) {
+            card.style.display = '';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

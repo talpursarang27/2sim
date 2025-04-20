@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cera's Tiles</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link
+    
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .navbar {
+        background-color: rgb(17, 17, 17);
+      }
+      #gap{
+        /* left: 10px; */
+        right: 107px;
+        position: relative;
+        gap: 10px;
+      }
+      #cont{
+        margin-top:30px ;
+      }
+      #cont button{
+        background-color: black;
+        color: white;
+      }
+      #cont-2{
+        margin-top: 30px;
+      }
+      #cont-3{
+        margin-top: 20px;
+      }
+      #cont-3 img{
+        position: relative;
+        right: 90px;
+      }
+      #cont-2 .col-6 h1{
+        font-size: 55px;
+        line-height: 1;
+        letter-spacing: 1px;
+        padding-bottom: 20px;
+    
+      }
+      #cont-3-1 {
+        position: relative;
+        left: 294px ;  
+        background-color: #c7ebe3;
+        box-shadow: 2px 2px 2px 2px black;
+        width: 340px;
+        height: 540px;
+        
+      }
+      #cont-3-1 .fancy-supportive-text{
+     font-family: 'lato' ,sans-serif;
+     font-size: 24px;
+     line-height: 1;
+     margin-top: 10px;
+      }
+      .p-1{
+        color: black;
+        font-family: 'Lato',sans-serif;
+       line-height: 44px;
+       font-style: normal;
+       font-weight: 400;
+       
+      }
+      .p-1 p{
+        width: 250px;
+        font-size: 20px;
+      }
+      #kit-1{
+        box-sizing: initial;
+        padding-left: 15px;
+        padding-right: 15px;
+        width: 100%;
+      }
+      #kit-1 .fancy-supportive-text{
+        margin-top: 6px;
+        font-size: 22px;
+        font-family: 'lato',sans-serif;
+        line-height: 1;
+      }
+      #kit-1 h3{
+        font-size: 40px;
+        line-height: 1;
+        letter-spacing: 0;
+        padding-bottom: 8px;
+        font-weight: 700px;
+      }
+      #kit-1 .ty-2{
+        color: black;
+        font-family: 'Lato',sans-serif;
+       line-height: 19px;
+       font-style: normal;
+       font-weight: 400;
+       letter-spacing: .5px;
+       width: 260px;
+
+      }
+      #ty-1{
+        padding: 18px 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        right: 100px;
+      }
+
+      #kit-2 {
+        position: relative;
+        bottom: 476px;
+        left: 231px;
+        box-shadow: 2px 2px 2px 2px  rgb(41, 36, 26);
+      }
+     
+      #kit-3{
+        position: relative;
+        bottom: 451px;
+        right: -361px;
+        box-shadow: 2px 2px 14px 2px rgb(41, 36, 26);
+      }
+      button{
+        background-color: #0a0a0a;
+        color: white;
+      }
+      #ui-1{
+        position: relative;
+        bottom:300px ;
+        font-size: 15px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      }
+     
+      #ui-2 img{
+        position: relative;
+        bottom:300px ;
+        border: 2px solid #0a0a0a;
+        border-radius: 130px 5px 10px 93px;
+      }
+
+      .footer a.footer-link {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.footer a.footer-link:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.footer input,
+.footer textarea {
+  font-size: 14px;
+}
+
+.footer .btn {
+  background-color: #0c0d0e;
+  color: white;
+  border: none;
+}
+
+.footer .btn:hover {
+  background-color: white;
+  color: #0a0a0a;
+  transition: 0.3s ease-in-out;
+}
+
+      
+      
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+
+.navbar {
+  animation: fadeIn 2s ease-out;
+}
+
+#cont .col-6 img, 
+#cont-2 .col-6 img, 
+#cont-3 .col-6 img {
+  animation: slideInFromLeft 1.5s ease-out;
+}
+
+
+button:hover {
+  background-color: #444444;
+  transition: background-color 0.3s ease;
+}
+
+
+#cont-3-1 h2, 
+#kit-1 h3, 
+#kit-2 h4, 
+#kit-3 h4 {
+  animation: fadeIn 1.5s ease-out;
+}
+
+
+.footer {
+  animation: fadeIn 3s ease-in-out;
+}
+
+.footer a.footer-link {
+  transition: color 0.3s ease;
+}
+
+.footer a.footer-link:hover {
+  color: #fff;
+}
+
+footer #contactForm {
+  animation: slideInFromRight 2s ease-out;
+}
+
+
+#kit-1, #kit-2, #kit-3 {
+  animation: slideInFromLeft 1.5s ease-out;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.search-input {
+  flex: 1;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  outline: none;
+}
+
+.search-button {
+  background-color: #222;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-button i {
+  font-size: 16px;
+}
+
+#leftside{
+  font-size: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  padding: 28px 10px;
+  letter-spacing: normal;
+}
+.text-white{
+  background-color: #4986be;
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col">
+          <!-- NAVBAR -->
+          <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+              <!-- LOGO -->
+              <!--<img src="./img/Bright_Simple_Abstract_Logo-removebg-preview.png" style="width: 200px; color: white;">
+         <img src="ChatGPT Image Apr 12, 2025, 06_16_28 PM.png" alt="" width="200px">--> 
+              <img
+                src="JEgdHc.png"
+                alt=""
+                width="200px"
+              />
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul
+                  class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" id="gap"
+                  style="--bs-scroll-height: 100px"
+                >
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"
+                      >Home</a
+                    >
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle  active" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Walls Tiles
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                      <li><a class="dropdown-item" href="walls tiles.html">Bathroom Tiles</a></li>
+                      <li><a class="dropdown-item" href="#">kitchen Tiles</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Living Room Tiles</a></li>
+                    </ul>
+                  </li>
+
+                  
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"
+                      >Ceramic Tiles</a
+                    >
+                  </li>
+
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle  active" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Floor Tiles
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                      <li><a class="dropdown-item" href="floor tiles.html">Bathroom Tiles</a></li>
+                      <li><a class="dropdown-item" href="#">kitchen Tiles</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Living Room Tiles</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <div class="search-container">
+                  <input type="text" placeholder="Search..." class="search-input" />
+                  <button class="search-button">
+                    <i class="fas fa-search"></i>
+                  </button>
+                </div>
+                
+              </div>
+            </div>
+          </nav>
+          
+        </div>
+      </div>
+    </div>
+<!-- naw bar complete -->
+<div class="container" id="cont">
+    <div class="row">
+        <div class="col-6" id="leftside">
+            <h1>Bathrooms</h1>
+            <p>We have the secret formula for wellbeing. Colours and water outlets that activate the five senses. Because water gives birth to life and it has inspired us to create Wellness Showers and Baths, which offer a routine of well-being to revitalize both body and mind.</p>
+
+            <button><a href="walls tiles.html" style="color: #ffffff;">Explore</a></button>
+
+        </div>
+        <div class="col-6">
+            <img src="https://imperialtiles.net/wp-content/uploads/2018/12/imperial-tiles-imagine-your-bathroom-side-img.jpg" alt="" width="625px">
+        </div>
+    </div>
+    <div class="row" id="cont-2">
+      <div class="col-6">
+        <h1>
+          <small>Natural Sophistication</small>
+          <br>
+          "Bathrooms In Black And Wood"
+        </h1>
+        <div class="separator  small left  " style="background-color: #0a0a0a;height: 1px;width: 50px;"></div>
+        <p>black matt. Essence.Cbathrooms. Comfort. </p>
+
+        <button>Explore</button>
+      </div>
+      <div class="col-6">
+        <img src="https://imperialtiles.net/wp-content/uploads/2018/12/imperial-tiles-home-carousel-img-1.jpg" alt=""
+        width="625px" >
+      </div>
+    </div>
+    <div class="row" id="cont-3">
+      <div class="col-6">
+        <img src="img/Screenshot 2025-04-17 181634.png" alt="">
+      </div>
+      <div class="col-6" id="cont-3-1">
+        <p class="fancy-supportive-text">Imperial</p>
+        <h2>FLOORING</h2>
+        <div class="separator  small right  " style="margin-top: 20px;background-color: #0a0a0a;height: 1px;width: 50px;"></div>
+        <div class="p-1">
+          <p>Each room is different and requires different designs to give a powerful statement. Let's explore tiles specific to your space with a unique look tailored to your style and preference.</p>
+          <button>Explore</button>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="container">
+      <div class="row" id="ty-1">
+        <div class="col-3" id="kit-1">
+          <img width="360" height="300" src="https://imperialtiles.net/wp-content/uploads/2018/12/imperial-tiles-home-kitchen-category-img.jpg" alt="">
+          <p class="fancy-supportive-text">Modern and minimalist</p>
+          <h3>Kitchens</h3>
+          <p class="ty-2">Quality kitchens combining beauty and functionality to perfection.</p>
+        </div>
+
+        <div class="col-3" id="kit-2" >
+          <img  src="https://imperialtiles.net/wp-content/uploads/2018/12/imperial-tiles-home-kitchen-faucet.jpg" alt="">
+          <p>
+            <small>Design, Comfort</small>
+          </p>
+          <h4>Faucets</h4>
+          <p class="description">Award-winning design and industry-leading technologies.</p>
+          <button>Explore</button>
+        </div>
+        <div class="col-3" id="kit-3">
+          <img  src="https://imperialtiles.net/wp-content/uploads/2018/12/kitchen-sink.png" alt="">
+          <p
+          ><small>Style, Functionality</small>
+          </p>
+          <h4>Sinks</h4>
+          <p class="description">We know how important it is for you to have the right kitchen sink. Choose your kitchen sink from a variety of styles.</p>
+          <button>Explore</button>
+        </div>
+        
+        </div>
+      </div>
+      <div class="container-2">
+        <div class="row">
+          <div class="col-6" id="ui-1">
+        <h1>
+          <small>Inspiring</small>
+          <br>
+          Kitchens</h1>
+          <div class="separator  small left  " style="background-color: #0a0a0a;height: 1px;width: 50px;"></div>
+          <p>An inspiring kitchen is more than just a place to cook—it's the heart of the home, where creativity, connection, and comfort come together. Flooded with natural light and filled with thoughtful details, it invites you to experiment with flavors, nourish your loved ones, and savor everyday moments. Sleek countertops, warm wooden accents, and open shelving lined with favorite dishes and spices spark both function and beauty. Whether it's the aroma of fresh herbs or the hum of conversation over coffee, an inspiring kitchen fuels the soul as much as the body, making it a space where memories are made and joy is always on the menu.</p>
+          </div>
+          <div class="col-6" id="ui-2">
+            <img src="https://images.unsplash.com/photo-1602028915047-37269d1a73f7?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8a2l0Y2hlbiUy" alt="" width="600"
+            height="400" >
+          </div>
+        </div>
+      </div>
+      
+<footer class="footer mt-auto py-5  text-white" id="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <h5>Cera's Tiles</h5>
+        <p>Your one-stop destination for stylish tiles and accessories for every room.</p>
+        <div>
+          <a href="#" class="text-white me-3"><i class="fab fa-facebook fa-lg"></i></a>
+          <a href="#" class="text-white me-3"><i class="fab fa-instagram fa-lg"></i></a>
+          <a href="#" class="text-white me-3"><i class="fab fa-twitter fa-lg"></i></a>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <h5>Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="#" class="footer-link">Home</a></li>
+          <li><a href="#" class="footer-link">Wall Tiles</a></li>
+          <li><a href="#" class="footer-link">Floor Tiles</a></li>
+          <li><a href="#" class="footer-link">Kitchens</a></li>
+          <li><a href="About us.html" class="footer-link">About us</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <h5>Contact Us</h5>
+        <form id="contactForm">
+          <div class="mb-2">
+            <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+          </div>
+          <div class="mb-2">
+            <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+          </div>
+          <div class="mb-2">
+            <textarea class="form-control" id="message" rows="3" placeholder="Your Message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-light">Send</button>
+        </form>
+        <div id="formMessage" class="mt-2 text-success"></div>
+      </div>
+    </div>
+
+    <div class="text-center pt-3">
+      <p>© <span id="year"></span> Cera's Tiles. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    
+      
+      document.getElementById("contactForm").addEventListener("submit", function (e) {
+        e.preventDefault();
+        
+        
+        document.getElementById("contactForm").reset();
+    
+      
+        document.getElementById("formMessage").textContent = "Thanks! We'll be in touch shortly.";
+      });
+    </script>
+    
+  </body>
+</html>
